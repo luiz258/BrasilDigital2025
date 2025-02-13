@@ -1,8 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
-
 .container {
     display: flex;
+}
+
+.justificar {
+    justify-content: space-between
+}
+
+.justificar-evenly {
+    justify-content: space-evenly;
+
 }
 
 .bemvindo {
@@ -15,7 +23,7 @@
 }
 
 body {
-    padding: 0, auto;
+    margin: 0;
     font-family: "Inter", serif;
     font-optical-sizing: auto;
     font-style: normal;
@@ -63,7 +71,7 @@ body {
     padding: 10px 20px 10px 20px;
 }
 
-.menssagem{
+.menssagem {
     /* padding-top: 6rem;
     padding-left: 3rem;
     padding-right: 3rem; */
@@ -72,27 +80,86 @@ body {
 
 }
 
-.banner-parceiros{
- width: 450px;
- height: 350px;
- /* padding-top: 7rem;*/
- padding-left: 1rem; 
+.banner-parceiros {
+    width: 450px;
+    height: 350px;
+    /* padding-top: 7rem;*/
+    padding-left: 1rem;
 }
 
-.conteudo{
+.conteudo {
     display: flex;
     /* align-content: space-around; */
 }
-#sobre-programa{
-padding-top:40px;
-justify-content: space-around
 
-
+#sobre-programa {
+    padding-top: 40px;
+    justify-content: space-around
 }
 
-#cursos{
-    img{
+#cursos {
+    img {
         width: 300px;
         height: auto;
+    }
+
+    h1 {
+        margin-left: 64px;
+        margin-bottom: 25px;
+    }
+}
+
+#formulario {
+    margin-top: 10vh;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    align-items: center;
+
+    background-color: #7ea6ec;
+
+    h1 {
+      color: #060b5a;  
+      font-weight: 800;
+    }
+    
+    ul, b{
+        color: #060b5a;  
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+
+    input[type=text],[type=email] {
+        height: 2rem;
+        border-radius: 5px;
+        border-color: #c3bfbf3b;
+    }
+    input[type=button] {
+        margin-top: 2rem !important;
+    }
+
+    select{
+        height: 2.5rem;
+        border-radius: 5px;
+        border-color: #bbb9b93b;
+    }
+
+    /* .informativo {
+        padding: 3rem;
+    } */
+
+    .formulario {
+        background-color: #dbdbdb;
+        padding: 40px;
+        width: 450px;
+        border-radius: 20px;
+    }
+
+    #ilustracao{
+        height: 240px;
+        width: auto;
     }
 }

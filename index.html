@@ -9,7 +9,10 @@
     </head>
 
     <body>
-        <div id="fundo-banner" class="container">
+        <header>
+            <img src="https://institutobrasildigital.org/wp-content/uploads/2022/08/Brasil-10.png">
+        </header>
+        <div id="fundo-banner" class="container justificar">
             <div class="bemvindo">
                 <h1 class="titulo-banner">Bem-vindo ao
                     Brasil Digital.</h1>
@@ -19,7 +22,7 @@
                 </p>
                 <button class="botao-primario">Venha conhecer</button>
             </div>
-            <div class="container">
+            <div >
                 <img id="banner" src="asserts/image/banner.png" />
             </div>
         </div>
@@ -45,17 +48,54 @@
 
         <div id="cursos" class="">
            <div>
-            <h1>Cursos</h1>
+            <h1 >Cursos</h1>
            </div>
-           <div>
-            <div><img src="asserts/image/web.png"></div>
-            <div><img src="asserts/image/mobile.png"></div>
-            <div>3</div>
-            <div>4</div>
+           <div class="container justificar-evenly">
+            <div><a href=""><img src="asserts/image/web.png"></a></div>
+            <div><a href=""><img src="asserts/image/mobile.png"></a></div>
+            <div><a href="cursos.html"><img src="asserts/image/web.png"></a></div>
            </div>
-               
-          
+        </div>
 
+        <div id="formulario" class="container justificar-evenly">
+            <div class="informativo">
+                <h1>Faça sua inscrição!</h1>
+                <img id="ilustracao" src="asserts/image/undraw_hello_ccwj.svg">
+                <br>
+                <br>
+                <br>
+                <br>
+                <b>Requisitos:</b>
+                <ul>
+                    <li> Documentos de Identidade e CPF </li>
+                    <li> Comprovante de Residência</li>
+                    <li> <b>Público Alvo</b>: Apartir dos 16 anos de idade</li>
+                </ul>
+            </div>
+            <div class="formulario">
+                <form>
+                    <h1>Informações de Inscrição</h1>
+                    <label>Nome Completo</label>
+                    <input  type="text" />
+                    <br>
+                    <label>E-mail</label>
+                    <input type="email" />
+                    <br>
+                    <label>Telefone</label>
+                    <input type="text" />
+                    <br>
+                    <label>Selecione seu curso:</label>
+                    <select>
+                        <option>Programação Web</option>
+                        
+                        <option>Programação Mobile</option>
+                        
+                        <option>Desing Digital</option>
+                    </select>
+
+                    <input type="button" class="botao-secundario"  value="Inscreva-se agora" />
+                </form>
+            </div>
         </div>
     </body>
 
